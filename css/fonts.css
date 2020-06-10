@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "PTSans NarrowBold";
+	src: url('../fonts/ptsansnarrowbold.ttf') format("ttf"),
+	url('../fonts/ptsansnarrowbold.woff') format("woff");
+}
+
+@font-face {
+	font-family: "PTSans Narrow";
+	src: url('../fonts/ptsansnarrow.ttf') format("ttf"),
+	url('../fonts/ptsansnarrow.woff') format("woff");
+}
+
+
+@font-face {
+	font-family: "Myriad Pro Regular";
+	src: url('../fonts/MyriadProRegular.ttf') format("ttf"),
+	url('../fonts/MyriadProRegular.woff') format("woff");
+}
+
