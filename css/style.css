@@ -1,5 +1,50 @@
 @import url("normalize.css");
 @import url("fonts.css");
+.owl-stage {
+  display: flex; }
+
+.owl-stage-outer {
+  overflow: hidden; }
+
+.owl-prev,
+.owl-next {
+  width: 50px;
+  border: 1px solid #e5ddd5;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; }
+  .owl-prev img,
+  .owl-next img {
+    max-width: 12px; }
+
+.owl-nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  max-height: 168px; }
+
+.owl-next {
+  float: right;
+  margin-right: -58px; }
+
+.owl-prev {
+  float: left;
+  margin-left: -58px; }
+
+.owl-dots {
+  margin-top: 40px; }
+
+body .owl-dots .owl-dot {
+  border-radius: 0px;
+  border: 1px solid #858483;
+  transform: rotate(45deg);
+  cursor: pointer; }
+
+body .owl-dots .owl-dot.active {
+  background-color: #353535; }
+
 .wrap-top {
   background-color: #000; }
 
@@ -157,7 +202,7 @@
   bottom: 0px;
   position: absolute; }
 
-.news-wrap .news-title {
+.news-title {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 40px;
   text-transform: uppercase;
@@ -177,28 +222,104 @@
     padding: 14px;
     text-align: center; }
 
-.news .new-data {
-  background-color: #000;
-  color: #fff;
-  display: inline-block;
-  padding: 10px;
-  position: relative; }
-  .news .new-data p {
-    font-size: 18px;
-    font-family: "Myriad Pro Regular", sans-serif; }
-  .news .new-data span:first-child {
-    font-size: 30px;
-    font-family: "PT Sans Narrow", sans-serif;
-    display: block;
-    line-height: 0.7; }
-  .news .new-data span:last-child {
-    font-size: 16px;
+.news-wrap {
+  border-bottom: 1px solid #e5ddd5; }
+
+.news {
+  margin: 40px 0px 20px 0px; }
+  .news .new-data {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    padding-bottom: 2px;
+    text-align: center; }
+    .news .new-data p {
+      font-size: 18px;
+      font-family: "Myriad Pro Regular", sans-serif; }
+    .news .new-data span:first-child {
+      font-size: 30px;
+      font-family: "PT Sans Narrow", sans-serif;
+      display: block;
+      line-height: 0.7; }
+    .news .new-data span:last-child {
+      font-size: 16px;
+      font-family: "Myriad Pro Regular", sans-serif;
+      line-height: 0.7; }
+    .news .new-data:before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/Vector_Smart_Object.svg");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 12px;
+      bottom: -12px;
+      left: 0px;
+      right: 0px; }
+  .news .new p {
     font-family: "Myriad Pro Regular", sans-serif;
-    line-height: 0.7; }
-  .news .new-data:before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/Vector_Smart_Object.svg");
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 10px; }
+    font-size: 18px;
+    margin: 0px 18px; }
+  .news .once-new {
+    display: flex; }
+    .news .once-new .new-data {
+      align-self: start;
+      margin: 10px 0px; }
+
+.reviews-wrap {
+  padding: 40px 0px; }
+
+.slider {
+  margin: 40px 0px;
+  position: relative; }
+  .slider .slide {
+    display: flex;
+    border: 1px solid #e5ddd5; }
+  .slider .slide-img img {
+    max-width: 250px; }
+  .slider .slide-text {
+    padding: 0px 70px;
+    align-self: center; }
+    .slider .slide-text span {
+      font-family: "PTSans NarrowBold", sans-serif;
+      font-size: 24px;
+      color: #000;
+      font-weight: bold; }
+    .slider .slide-text p {
+      font-family: "Myriad Pro Regular", sans-serif;
+      font-size: 18px;
+      color: #000;
+      margin: 6px 0px;
+      line-height: 1.6; }
+
+footer {
+  background-color: #292929;
+  padding: 40px 0px;
+  color: #fff; }
+  footer span {
+    display: block;
+    font-family: "Myriad Pro Regular", sans-serif;
+    line-height: 2; }
+  footer .foot-title {
+    font-family: "PTSans NarrowBold", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase; }
+  footer .social {
+    text-align: center; }
+  footer .social-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px; }
+    footer .social-wrap a {
+      display: inline-block;
+      height: 48px;
+      width: 48px;
+      border: 1px solid #3f3f3f;
+      padding-top: 9px;
+      text-align: center;
+      margin: 0px 4px; }
+      footer .social-wrap a img {
+        height: 26px;
+        display: inline-block; }
