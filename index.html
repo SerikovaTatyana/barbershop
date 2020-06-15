@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
 	<link href="libs/owlcarousel/owl.theme.default.css" type="text/css" rel="stylesheet" />
+	<link href="libs/wow/animate.css" type="text/css" rel="stylesheet" />
 	
 	<link href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -20,7 +21,7 @@
 		
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10">
+					<div class="col-xs-12 col-sm-10 col-md-10">
 					
 						<nav>
 							<ul class="main-menu">
@@ -34,9 +35,48 @@
 					
 					
 					</div>
-					<div class="col-md-2">
+					<div class="col-xs-12 col-sm-2 col-md-2">
 					
-					    <button class="but">Вход</button>
+					    <button class="but click-popap">Вход</button>
+						
+						
+						<div class="modal-close">
+
+
+							<div class="modal-content modal-content-show form-view" style="max-width: 280px;">
+
+								<div class="close-button"></div>
+
+								<h2>Получить чек-лист на подготовку груза</h2>
+
+
+								<div class="parent-popap">
+
+									<form method="post" action="email.php" id="question7">
+                                        <input name="form-name" type="hidden" value="Консультация">
+										<label for="name7">Ваше имя</label>
+										<input name="name7" id="name7" type="text"><br>
+
+										<label for="mail7">Ваша почта</label>
+										<input name="mail7" id="mail7" type="tel"><br>
+
+
+										<div class="mail-result"></div>
+										<input value="Отправить" type="submit" onclick="yaCounter51824444.reachGoal('form7'); return true;">
+
+									</form>
+
+								</div>
+
+
+							</div>
+
+
+
+
+					   	</div>
+						
+						
 					   
 					
 					</div>
@@ -150,30 +190,37 @@
 			
 					<div class="col-md-4">
 					    
-						<img src="img/advantage-1-illustration.svg" alt="">
-						
-						<span class="title">БЫСТРО</span>
-						<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
-					
+						<div class="info-block">
+							
+							<img src="img/advantage-1-illustration.svg" alt="">
+							
+							<span class="title">БЫСТРО</span>
+							<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
+							
+					    </div>
 					</div>
 					
 					<div class="col-md-4">
-					
 					    
-						<img src="img/advantage-2-illustration.svg" alt="">
-						<span class="title">КРУТО</span>
-					    <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. 
-						Во всяком случае внешне.
-						</p> 
-												 
+					    <div class="info-block">
+							<img src="img/advantage-2-illustration.svg" alt="">
+							<span class="title">КРУТО</span>
+							<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. 
+							Во всяком случае внешне.
+							</p> 
+													 
+						</div>
+						
 					</div>
 					
 					<div class="col-md-4">
-					
-					    <img src="img/advantage-3-illustration.svg" alt="">
-						<span class="title">ДОРОГО</span>
-					    <p>Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
-						
+					    
+						<div class="info-block">
+							<img src="img/advantage-3-illustration.svg" alt="">
+							<span class="title">ДОРОГО</span>
+							<p>Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+							
+						</div>
 					</div>
 			    
 				</div>
@@ -202,12 +249,12 @@
 		    
 			<div class="row">
 			
-				<div class="col-md-10">
+				<div class="col-sm-9 col-md-10">
 				
 				    <span class="news-title">Новости и акции</span>
 				
 				</div>
-				<div class="col-md-2">
+				<div class="col-sm-3 col-md-2">
 				
 				    <div class="but-transparent">
 					
@@ -296,13 +343,13 @@
 		
 	    	<div class="row">
 			
-				<div class="col-md-10">
+				<div class="col-sm-9 col-md-9 col-lg-10">
 				
 				    <span class="news-title">Отзывы о нас</span>
 				
 				</div>
 				
-				<div class="col-md-2">
+				<div class="col-sm-3 col-md-3 col-lg-2">
 				
 				    <div class="but-transparent">
 					
@@ -393,17 +440,21 @@
 		
 		    <div class="row">
 		
-				<div class="col-md-4">
-				
-				    <span class="foot-title">Барбершоп Бородинский</span>
+				<div class="col-sm-12 col-md-4">
+				    
+					<div class="foot-adres">
+					
+						<span class="foot-title">Барбершоп Бородинский</span>
 
-					<span>г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
-					Тел.: +7 (812) 555-66-66</span>
+						<span>г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+						Тел.: +7 (812) 555-66-66</span>
+					
+					</div>
 				
 				
 				</div>
 				
-				<div class="col-md-4">
+				<div class="col-sm-6 col-md-4">
 				
 				    <div class="social">
 				    
@@ -421,9 +472,21 @@
 				
 				</div>
 				
-				<div class="col-md-4">
-				
-				    <span>Давайте дружить!</span>
+				<div class="col-sm-6 col-md-4">
+				    
+					<div class="designed-by">
+					
+					    <span>Разработано:</span>
+						
+						<div class="but-transparent-darck">
+						
+							<span>HTML ACADEMY</span>
+						
+						</div>
+						
+					</div>
+					
+				    
 				
 				</div>
 			
@@ -434,6 +497,7 @@
 	</footer>
 
 	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+	<script src="libs/wow/wow.js"></script>
     
 	<script src="js/common.js"></script>
 	<!-- <script src="js/script.min.js"></script> -->
