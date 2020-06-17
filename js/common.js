@@ -135,6 +135,25 @@ jQuery(document).ready(function(){
      });
 
 
+    var isActive = false;
+
+    $('.header__menubtn').on('click', function() {
+        if (isActive) {
+            $('.hamburger').removeClass('burger-active');
+            $( ".hamburger-menu" ).fadeOut( 200, function() {
+                    // Animation complete
+               
+            });
+        } else {
+            $('.hamburger').addClass('burger-active');
+            $('.hamburger-menu').fadeIn(200, function () {
+                
+            });
+        }
+
+        isActive = !isActive;
+    });
+
 
 /*
 

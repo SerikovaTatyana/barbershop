@@ -1,5 +1,10 @@
 @import url("normalize.css");
 @import url("fonts.css");
+button,
+button:active,
+button:focus {
+  outline: none !important; }
+
 .modal-open-parent {
   display: none;
   color: #333; }
@@ -140,19 +145,111 @@
   display: none;
   width: 40px;
   height: 25px;
-  margin: 20px auto;
+  margin1: 20px auto;
   border: none;
   border-top: 5px solid #fff;
   border-bottom: 5px solid #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-top: 11px; }
 
+/*
 .but-menu:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 100%;
+    border-top: 5px solid #fff;
+}
+*/
+.header__menubtn {
+  border: none !important;
+  background: transparent;
+  cursor: pointer;
+  width: 3.75rem;
+  height: 40px;
+  z-index: 999999; }
+
+.hamburger {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+  width: 35px;
+  border-radius: 0.125rem;
+  position: relative;
+  margin-top1: 1.25rem;
+  height: 0.3125rem;
   content: "";
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.hamburger:hover:before {
+  opacity: 0.8; }
+
+.hamburger:hover:after {
+  opacity: 0.8; }
+
+.hamburger:before {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+  border-radius: 0.125rem;
   position: absolute;
-  top: 6px;
-  left: 0px;
+  width: 35px;
+  top: -10px;
+  height: 0.3125rem;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 0px; }
+
+.hamburger:after {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+  border-radius: 0.125rem;
+  position: absolute;
+  width: 35px;
+  top: 10px;
+  height: 0.3125rem;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 0px; }
+
+.burger-active {
+  background-color: rgba(255, 255, 255, 0) !important; }
+
+.burger-active:hover {
+  background-color: rgba(255, 255, 255, 0); }
+
+.burger-active:before {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.burger-active:after {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.hamburger-menu {
+  z-index: 55555;
   width: 100%;
-  border-top: 5px solid #fff; }
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(24, 54, 105, 0.87);
+  display: none; }
 
 .black-block-open {
   position: fixed;
