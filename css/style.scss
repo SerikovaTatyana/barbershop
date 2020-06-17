@@ -163,7 +163,7 @@
     right: 22px;
     top: 10px;
 
-    display: block;
+    display: none;
     width: 40px;
     height: 25px;
     margin: 20px auto;
@@ -843,6 +843,15 @@ footer {
         z-index: 1;
         text-align: center;
         padding-top: 30px;
+    }
+
+    .but-menu {
+        display: block;
+    }
+
+    body .but {
+        float: none;
+        margin-left: 26px;
     }
 
     .main-menu li {
