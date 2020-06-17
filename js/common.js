@@ -88,7 +88,8 @@ jQuery(document).ready(function(){
 			
 			 });
 
-            $('body').css('overflow', 'auto').animate({
+            //$('body').css('overflow', 'auto').animate({
+            $('body').animate({
 			   right: 0
 			});
 
@@ -105,9 +106,13 @@ jQuery(document).ready(function(){
 			   left: 0
 			});
 
-			$('body').css('overflow', 'hidden').animate({
+			//$('body').css('overflow', 'hidden').animate({
+
+            var body_width = $('body').width();
+
+			$('body').animate({
 			   
-			   right: '-100%'
+			   right:  body_width + 'px'
 			   
 			});
 

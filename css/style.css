@@ -163,7 +163,8 @@
   left: 0px;
   z-index: 1;
   overflow-y: scroll;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 /*
 .but-menu:before {
@@ -177,7 +178,8 @@
 */
 body {
   position: relative;
-  overflow1: hidden; }
+  overflow1: hidden;
+  max-width1: 100%; }
 
 nav {
   min-height1: 100px;
@@ -547,7 +549,8 @@ footer {
     background-color: #404040;
     z-index: 1;
     text-align: center;
-    padding-top: 30px; }
+    padding-top: 30px;
+    max-width1: 320px; }
   .but-menu {
     display: block; }
   body .but {

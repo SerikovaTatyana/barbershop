@@ -196,6 +196,7 @@
     z-index: 1;
     overflow-y: scroll;
     text-align: center;
+    overflow: hidden;
 }
 
 
@@ -213,6 +214,7 @@
 body {
     position: relative; 
     overflow1: hidden;
+    max-width1: 100%;
 }
 
 nav {
@@ -843,6 +845,7 @@ footer {
         z-index: 1;
         text-align: center;
         padding-top: 30px;
+        max-width1: 320px;
     }
 
     .but-menu {
