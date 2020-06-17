@@ -74,5 +74,77 @@ jQuery(document).ready(function(){
 
 
 
+    $('.but-menu').click(function(){
+      
+
+	    if($(this).hasClass('close-menu')){
+	          
+	        $(this).removeClass('close-menu').css('position', 'absolute');
+	        $('.black-block-close').removeClass('black-block-open');
+
+
+            $('.main-menu').css('display', 'block').animate({
+			   left: '-100%'
+			
+			 });
+
+            $('body').css('overflow', 'auto').animate({
+			   right: 0
+			});
+
+
+	    } else {
+
+	    	
+            $('.black-block-close').addClass('black-block-open');
+
+	        $(this).addClass('close-menu').css('position', 'fixed');
+
+	        //$(this).css('opacity', '0');
+			$('.main-menu').css('display', 'block').animate({
+			   left: 0
+			});
+
+			$('body').css('overflow', 'hidden').animate({
+			   
+			   right: '-100%'
+			   
+			});
+
+	    }
+
+
+
+      
+
+	});
+
+
+
+    $('.close-menu').click(function(){
+
+    	console.log('bam');
+
+        $(this).removeClass('close-menu');
+
+     });
+
+
+
+/*
+
+	$('.but-menu.close').click(function(){
+		
+		$('.but-menu').css('opacity', '1');
+		 $('.main-menu').animate({
+		  left: '-200px'
+		});
+
+		 $('body').animate({
+		   right: 0
+		 });
+	});
+*/
+
 
 });
